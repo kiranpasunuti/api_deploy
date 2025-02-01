@@ -18,7 +18,7 @@ class DummyTest(db.Model):
     Engine = db.Column(db.Text)
     row_key = db.Column(db.Text)
     variant_key = db.Column(db.Text)
-@app.route('/part_name', methods=['POST'])
+@app.route('/part_name1', methods=['POST'])
 def get_part_name():
     data = request.get_json()
     if not data or 'Brand' not in data:
